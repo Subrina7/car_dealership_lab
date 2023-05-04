@@ -26,15 +26,16 @@ test("has max number of cars", () => {
     expect(dealership1.maxNoOfCars).toBe(expected)
 })
 
-// test("has max number of cars", () => {
-//     dealership1.maxNoOfCar= 105;
-//     expect(dealership1.maxNoOfCars).toBe(105)
-// })
+test("update max number of cars", () => {
+    dealership1.maxNoOfCar = 105;
+    expected = 105;
+    expect(dealership1.maxNoOfCars).toBe(105)
+})
 
-// test("check stock", () => {
-//     const expected = 1
-//     expect(dealership1.numberOfCarsInStock()).toBe(1);
-// })
+test("check stock", () => {
+    const expected = 1
+    expect(dealership1.numberOfCarsInStock()).toBe(1);
+})
 
 test("Check add stock method", () =>{
     dealership1.addStock(landRover);
