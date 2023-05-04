@@ -1,8 +1,6 @@
-const exp = require("constants");
 const Car = require(`./car`)
 
 let ferrari;
-
 beforeEach(() => {
     ferrari = new Car("Ferrari", 250000, "Colombo");
 

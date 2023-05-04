@@ -5,11 +5,14 @@ const Dealership = function (name, maxNoOfCars, carsInStock){
 
 }
 
-// const dealership1 = ("")
+Dealership.prototype.numberOfCarsInStock = function(){
+    return this.carsInStock.length;
+}
 
 Dealership.prototype.addStock = function(newCar){
     this.carsInStock.push(newCar);
 }
 
+module.exports = Dealership;
 
 
